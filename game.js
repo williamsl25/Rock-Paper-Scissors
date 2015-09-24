@@ -1,5 +1,10 @@
+// declare a variable
 var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+// have comuter choose a random number 0-1
 var computerChoice = Math.random();
+
+// translate random choice to rock, paper, scissors
 if (computerChoice < 0.34) {
   computerChoice = "rock";
 } else if(computerChoice <= 0.67) {
@@ -8,6 +13,8 @@ if (computerChoice < 0.34) {
   computerChoice = "scissors";
 } console.log("Computer: " + computerChoice);
 
+// create a function with 2 parameters and then return the winning choice
+// declare the function
 var compare = function (choice1, choice2){
     if(choice1 === choice2) {
     return "The result is a tie!";
@@ -38,6 +45,9 @@ var compare = function (choice1, choice2){
     }
 
 };
+
+// call the function and pass in userChoice and computerChoice as the 2 arguments - compare(userChoice, computerChoice);
+// use document.write to print it 
 document.write(compare(userChoice, computerChoice));
 
             
